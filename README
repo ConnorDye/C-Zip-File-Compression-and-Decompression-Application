@@ -1,0 +1,8 @@
+Connor Dye (chdye)
+
+My program uses the same Node structure throughout the program which
+contains the character, huffman code, frequency, etc. and therefore the memory
+is never freed because it's always in use.
+
+Also I fixed my formatting in vim from last time to expand tabs to 4 spaces
+and I implemented better more error handling.
