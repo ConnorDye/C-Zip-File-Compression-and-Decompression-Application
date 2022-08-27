@@ -1,4 +1,4 @@
-# File Compression Application
+# C-Zip: File Compression and Decompression Application
 
 This program consists of two applications: `hencode.c` which utilizes huffman encoding to compress a file, and `hdecode.c` to decompress a file.
 
