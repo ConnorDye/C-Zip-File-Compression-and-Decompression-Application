@@ -20,10 +20,4 @@ Created by Connor Dye as a California Polytechnic University Project.
 - helper functions to create headers to recreate the tree are included in hdecode.c and hencode.c
 - hencode.c and hdecode.c includes the parsing and main functionality to put all libraries together
 - How the Huffman algorithm works: **`1.)`** A variable length encoding is created based on the frequency that a character occurs in the file (e.g you want more frequent characters to be encoded with a smaller number of bits **`2.)`** To do this, we first find the counts of all characters in the file  **`3.)`**  We then place all the characters in a linked list ordered by frequency **`4.)`** From here, we generate the tree by removing the first two nodes, and placing the characters at the leaves and creating a parent node which holds the combined frequency of the leaves **`5.)`** We reinsert the node at the front of our linked list tree stucture  **`6.)`** We repeat this until all of our characters are at the leaves **`7.)`** We can now find our compressed encodings by traversing the tree; when we move right our bit is 1, and when we move left our bit is 0
-- ALGORITHM IN CODE AS FOLLOWS:
-        * PROCESS FILE INTO AN ARRAY OF NODES
-        * QUICKSORT BASED ON FREQUENCY AND CHARACTER SECONDARY
-        * TRANSFORM INTO A LIST
-        * TRANSFORM INTO HUFFMAN TREE
-        * GENERATE HUFFMAN CODES
-        * 
+- Algorithm in the code as follows: **`1.)`** PROCESS FILE INTO AN ARRAY OF NODES **`2.)`** QUICKSORT BASED ON FREQUENCY AND CHARACTER SECONDARY **`3.)`** TRANSFORM INTO A LIST **`4.)`** TRANSFORM INTO HUFFMAN TREE **`5.)`** GENERATE HUFFMAN CODES AND PLACE IN A HASH TABLE SO WE CAN QUICKLY WRITE OUR ENCODED OUTPUT TO A FILE **`6.)`** READ THE ORIGINAL FILES CHARACTERS, ACCESS THE NEW ENCODINGS IN OUR HASH TABLE, WRITE TO OUR OUTPUT FILE
